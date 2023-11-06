@@ -2,6 +2,7 @@
 ## Contact information:
 * Discord: aehmeve
 * Telegram: @aehmeve
+
 ## Brief Self-Introduction:
 My main priority is to learn new profession and become reliable employee.
 ## English Language:
