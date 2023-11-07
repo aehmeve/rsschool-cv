@@ -1,1 +1,1 @@
-# rsschool-cv
+https://aehmeve.github.io/rsschool-cv/
