@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+li {
+  color: white;
+  transition: 0.25s color ease-in-out;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a:hover,
+li:hover {
+  color: orange;
+}
+
+li::marker {
+  content: "\25A0  " ;
+}
+
+header,
+footer {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.body {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  color: whitesmoke;
+  font-family: Inter, sans-serif;
+}
+
+.body-container {
+  background-color: rgb(28, 28, 28);
+}
+
+.navbar-container{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(248, 248, 248);
+}
+
+.nav-bar {
+  display: flex;
+  background-color: rgb(28, 28, 28);
+  padding: 5px 0;
+}
+
+.nav-bar__items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 15px;
+}
+
+.color-change {
+  background-color: rgb(248, 248, 248);
+  height: 450px;
+  max-width: 1000px;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+}
+
+.name-container {
+  max-width: 1000px;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+}
+
+.my-avatar {
+  width: 300px;
+  object-fit: cover;
+  position: absolute;
+  left: 75px;
+  top: 240px
+}
+
+.me-container {
+  margin-top: 260px;
+  margin-right: 120px;
+  text-align: right;
+}
+
+.name,
+.prof {
+  color: rgb(28, 28, 28);
+  margin-left: 500px;
+  margin-top: 40px;
+}
+
+.aboutme-container {
+  margin: 90px 120px 90px 0;
+  max-width: 400px;
+  float: right;
+}
+
+.contact-container {
+  margin-left: 75px;
+  margin-top: 200px;
+  max-width: 105px;
+}
+
+.contact-container > ul,
+.education-container > ul {
+  padding-left: 20px;
+}
+
+.skills-container {
+  margin-top: 50px;
+  margin-left: 75px;
+  width: 150px;
+}
+
+.skills-container > ul > li::marker {
+  content: "";
+}
+
+.skills-container > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  pointer-events: none;
+  margin-bottom: 5px;
+}
+
+.code-container {
+  margin-top: 50px;
+  margin-left: 75px;
+  margin-right: 120px;
+}
+
+.code-example {
+  background-color: rgb(248, 248, 248);
+  margin-bottom: 10px;
+}
+
+.projects-container,
+.education-container {
+  margin-top: 50px;
+  margin-left: 75px;
+  margin-right: 120px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 50px;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: rgb(248, 248, 248);
+}
+
+.education-container > ul > li {
+  pointer-events: none;
+}
+
+.bi-github,
+.code,
+.creation-date {
+  color: rgb(28, 28, 28);
+}
+
+.bi,
+.rsschool-logo {
+  width: 60px;
+}
+
+.line {
+  border-bottom: 2px solid ;
+  margin-bottom: 10px;
+}
+
+.section-topic {
+  margin-bottom: 10px;
+}
+
+.aboutme-container > .section-topic {
+  text-align: right;
+}
+
+.logo {
+  height: 30px;
+}
