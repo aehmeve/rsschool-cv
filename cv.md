@@ -29,29 +29,29 @@ Languages:
 - Japanese ー N3
 
 ## Code Example:
-`
-function whoWouldWin(mon1, mon2) {
-  let mon1FullHP = mon1.hitpoints * mon1.number;
-  let mon2FullHP = mon2.hitpoints * mon2.number;
-              
-  while (mon1.number > 0 & mon2.number > 0) {
-    const mon1Attack = mon1.number * mon1.damage;
-    mon2FullHP -= mon1Attack;
-    mon2.number = Math.ceil(mon2FullHP / mon2.hitpoints);
-    if (mon2.number < 0) break;
-    const mon2Attack = mon2.number * mon2.damage;
-    mon1FullHP -= mon2Attack;
-    mon1.number = Math.ceil(mon1FullHP / mon1.hitpoints);
-  }
-              
-  const result =
-    mon1.number > 0
-      ? `${mon1.number} ${mon1.type}(s) won`
-      : `${mon2.number} ${mon2.type}(s) won`;
+```
+  function whoWouldWin(mon1, mon2) {
+    let mon1FullHP = mon1.hitpoints * mon1.number;
+    let mon2FullHP = mon2.hitpoints * mon2.number;
+                
+    while (mon1.number > 0 & mon2.number > 0) {
+      const mon1Attack = mon1.number * mon1.damage;
+      mon2FullHP -= mon1Attack;
+      mon2.number = Math.ceil(mon2FullHP / mon2.hitpoints);
+      if (mon2.number < 0) break;
+      const mon2Attack = mon2.number * mon2.damage;
+      mon1FullHP -= mon2Attack;
+      mon1.number = Math.ceil(mon1FullHP / mon1.hitpoints);
+    }
+                
+    const result =
+      mon1.number > 0
+        ? `${mon1.number} ${mon1.type}(s) won`
+        : `${mon2.number} ${mon2.type}(s) won`;
 
-    return result;
-}
-`
+      return result;
+  }
+```
 [Heroes of Might & Magic II: One-on-One (6 kyu)](https://www.codewars.com/kata/5b114e854de8651b6b000123)
 ## Projects:
 [Coffee House (RSSchool 2023Q4 Stage #1)](https://rolling-scopes-school.github.io/aehmeve-JSFE2023Q4/coffee-house/)
