@@ -146,7 +146,7 @@
               let mon1FullHP = mon1.hitpoints * mon1.number;
               let mon2FullHP = mon2.hitpoints * mon2.number;
               
-              while (mon1.number > 0 & mon2.number > 0) {
+              while (mon1.number &gt; 0 &amp; mon2.number &gt; 0) {
                 const mon1Attack = mon1.number * mon1.damage;
                 mon2FullHP -= mon1Attack;
                 mon2.number = Math.ceil(mon2FullHP / mon2.hitpoints);
@@ -157,7 +157,7 @@
               }
               
               const result =
-                mon1.number > 0
+                mon1.number &gt; 0
                 ? `${mon1.number} ${mon1.type}(s) won`
                 : `${mon2.number} ${mon2.type}(s) won`;
               
